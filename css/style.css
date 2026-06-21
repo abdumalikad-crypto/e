@@ -7,7 +7,6 @@
 }
 
 body {
-    background-color: #0b0b13;
     color: #ffffff;
 }
 .header {
@@ -15,14 +14,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background-color: rgba(11, 11, 19, 0.96);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #1c1c2e;
+    border-bottom: 1px ;
 }
 
 .logo {
+    color: #000000;
     font-size: 24px;
     font-weight: 900;
     letter-spacing: 2px;
@@ -30,7 +26,6 @@ body {
 
 .nav-links {
     display: flex;
-    background-color: #161626;
     padding: 6px 18px;
     border-radius: 50px;
     gap: 5px;
@@ -56,12 +51,9 @@ body {
     justify-content: center;
     text-align: center;
 }
-.gray-bg {
-    background-color: #121220;
-}
 .section-badge {
-    background: rgba(138, 43, 226, 0.15);
-    color: #b175ff;
+    background: rgba(0, 0, 0, 0.15);
+    color: #000000;
     padding: 6px 16px;
     border-radius: 20px;
     font-size: 12px;
@@ -91,8 +83,7 @@ body {
 
 
 .models-hero, .history-hero, .gallery-hero, .contact-hero {
-    background: linear-gradient(rgba(11,11,19,0.75), rgba(11,11,19,0.98)), 
-                url('https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=1200') no-repeat center center/cover;
+    background:  url('https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?q=80&w=1200') no-repeat center center/cover;
     min-height: 50vh;
 }
 
@@ -103,7 +94,7 @@ body {
 }
 
 .primary-btn {
-    background: #d50000;
+    background: #000000;
     color: white;
     padding: 12px 28px;
     border-radius: 30px;
@@ -115,9 +106,8 @@ body {
     padding: 12px 28px;
     border-radius: 30px;
     font-weight: bold;
-    border: 1px solid #252538;
+    border: 1px ;
 }
-/* MODELS GRID - TUZATILGAN VARIANTI */
 .cards-grid {
     display: flex;
     gap: 30px;
@@ -130,14 +120,13 @@ body {
     padding: 30px;
     border-radius: 28px;
     width: 350px;
-    /* Kartaga moslashuvchanlik beramiz va ichki kontent sig'ishini ta'minlaymiz */
     min-height: 580px; 
-    color: #111111; /* Matnlar rangini aniq qora qilamiz */
+    color: #111111; 
     text-align: left;
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow: hidden; /* Kontent chetdan chiqib ketmasligi uchun */
+    overflow: hidden; 
 }
 
 .card-logo {
@@ -153,39 +142,43 @@ body {
     z-index: 2;
 }
 
-.card-purple { background-color: #e3d5ff; }
-.card-blue { background-color: #c9e2ff; }
-.card-yellow { background-color: #ffeeb3; }
-
+.card-purple {
+     background-color: #e3d5ff; 
+    }
+.card-blue {
+     background-color: #c9e2ff; 
+    }
+.card-yellow { 
+    background-color: #ffeeb3; 
+}
+.card-image-box img {
+    height: 200px;
+}
 .card-image-box {
     width: 100%;
-    height: 180px; /* Rasm balandligini qat'iy belgilaymiz */
+    height: 180px; 
     border-radius: 18px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 20px;
     margin-top: 15px;
-    flex-shrink: 0; /* Rasm siqilib ketmasligi uchun */
 }
-
-/* Karta ichidagi matnlar rangi o'zgarib ketmasligi uchun CSS selectorlarni kuchaytiramiz */
 .card h3 {
     font-size: 24px;
     font-weight: 800;
-    color: #111111 !important;
+    color: #000000 !important;
     margin-bottom: 10px;
 }
 
 .card .card-desc { 
-    color: #222222 !important; 
+    color: #000000 !important; 
     font-size: 14px !important; 
     margin-bottom: 15px;
     line-height: 1.5;
 }
 
 .card-specs {
-    list-style: none;
     margin-bottom: 20px;
     padding: 15px;
     border-radius: 16px;
@@ -217,17 +210,15 @@ body {
     color: #ffffff !important;
     padding: 10px 22px;
     border-radius: 30px;
-    text-decoration: none;
     font-weight: bold;
     font-size: 13px;
     transition: 0.2s;
 }
 .card-btn {
-    background: #111;
+    background: #000000;
     color: white;
     padding: 8px 20px;
     border-radius: 30px;
-    text-decoration: none;
     font-weight: bold;
     font-size: 13px;
 }
@@ -242,7 +233,8 @@ body {
      }
 .split-image {
     flex: 1;
-    height: 350px;
+    
+    height: 500px;
     border-radius: 28px;
     background-size: cover;
     background-position: center;
@@ -287,9 +279,9 @@ body {
       color: #aaaab8;
        line-height: 1.4;
      }
-
-/* HISTORY STRUCTURE */
-.history-block { padding: 60px 50px; }
+.history-block {
+     padding: 60px 50px; 
+    }
 .history-card {
     background: #161626;
     padding: 40px;
@@ -308,9 +300,12 @@ body {
     
 }
 .active-badge {
-     background: #d50000;
+     
       color: white; 
     }
+    .hist-img img {
+    height: 250px;
+}
 .hist-img {
     width: 100%;
     height: 250px;
@@ -339,13 +334,14 @@ body {
     height: 280px;
     border-radius: 24px;
     background-size: cover;
-    background-position: center;
     position: relative;
     overflow: hidden;
 }
 .g-overlay {
     position: absolute;
-    bottom: 0; left: 0; right: 0;
+    bottom: 0;
+     left: 0;
+      right: 0;
     background:( rgba(0,0,0,0.8));
     padding: 20px;
     font-weight: bold;
@@ -355,11 +351,11 @@ body {
      width: 700px; 
      height: 350px;
      }
-.image-details-section h3
- { color: #b175ff;
+.image-details-section h3{
+     color: #000000;
  }
 .action-btn {
-     background: #b175ff;
+     background: #020102;
       border: none;
        padding: 12px 24px;
         color: white;
